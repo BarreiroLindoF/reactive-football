@@ -15,6 +15,7 @@ import {
 } from 'reactstrap';
 import axios from 'axios';  
 
+import './styles.css';
 
 class TableJoueurs extends Component {
 
@@ -101,8 +102,8 @@ class TableJoueurs extends Component {
                   </tbody>
                 </Table>
                 <Pagination size={"30"} >
-                  <PaginationItem onClick={()=>this.getTenPlayers(this.state.nextPlayerInd-2*this.state.nbPlayerToDisplay,this.state.nextPlayerInd-this.state.nbPlayerToDisplay)}><PaginationLink previous >Prev</PaginationLink></PaginationItem>
-                  <PaginationItem><PaginationLink onClick={()=>this.getTenPlayers(this.state.nextPlayerInd,this.state.nextPlayerInd+this.state.nbPlayerToDisplay)} next >Next</PaginationLink></PaginationItem>
+                  <PaginationItem className="clickable" onClick={()=>this.getTenPlayers(this.state.nextPlayerInd-2*this.state.nbPlayerToDisplay,this.state.nextPlayerInd-this.state.nbPlayerToDisplay)}><PaginationLink previous >Prev</PaginationLink></PaginationItem>
+                  <PaginationItem className="clickable"><PaginationLink onClick={()=>this.getTenPlayers(this.state.nextPlayerInd,this.state.nextPlayerInd+this.state.nbPlayerToDisplay)} next >Next</PaginationLink></PaginationItem>
                 </Pagination>
               </CardBody>
             </Card>

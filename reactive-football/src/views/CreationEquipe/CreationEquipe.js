@@ -60,7 +60,7 @@ class CreationEquipe extends Component {
     if (localStorage.getItem('user')) {
       return this.showCreationEquipe();
     } else {
-      return <Login onLogin={ this.update } />;
+      return <Login onLogin={ () => {window.location.reload();} } />;
     }
   }
 
@@ -142,7 +142,7 @@ class CreationEquipe extends Component {
                     Attaquant :
                   </Col>
                   <Col lg="5">
-                    {this.state.attaquant ? this.state.attaquant.nom : NO_PLAYER}
+                    {this.state.attaquant.nom ? this.state.attaquant.nom : NO_PLAYER}
                   </Col>
                   <Col lg="2">
                     <Button onClick={() => {
@@ -160,7 +160,7 @@ class CreationEquipe extends Component {
                     Milieu :
                   </Col>
                   <Col lg="5">
-                    {this.state.milieu ? this.state.milieu.nom : NO_PLAYER}
+                    {this.state.milieu.nom ? this.state.milieu.nom : NO_PLAYER}
                   </Col>
                   <Col lg="2">
                     <Button onClick={() => {
@@ -178,7 +178,7 @@ class CreationEquipe extends Component {
                     Défenseur :
                   </Col>
                   <Col lg="5">
-                    {this.state.defenseur ? this.state.defenseur.nom : NO_PLAYER}
+                    {this.state.defenseur.nom ? this.state.defenseur.nom : NO_PLAYER}
                   </Col>
                   <Col lg="2">
                     <Button onClick={() => {
@@ -196,7 +196,7 @@ class CreationEquipe extends Component {
                     Gardien :
                 </Col>
                   <Col lg="5">
-                    {this.state.gardien ? this.state.gardien.nom : NO_PLAYER}
+                    {this.state.gardien.nom ? this.state.gardien.nom : NO_PLAYER}
                   </Col>
                   <Col lg="2">
                     <Button onClick={() => {

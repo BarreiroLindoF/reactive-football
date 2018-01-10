@@ -83,7 +83,7 @@ class Accueil extends Component {
           </Row>
           <Row>
             <Col xs="6" sm="6" lg="3">
-              <div className="social-box facebook" onClick={() => window.open('https://www.facebook.com/footballfrance.fr/', '_newtab')}>
+              <div className="social-box facebook clickable" onClick={() => window.open('https://www.facebook.com/footballfrance.fr/', '_newtab')}>
                 <i className="fa fa-facebook"></i>
                 <div className="chart-wrapper">
                   <Line data={makeSocialBoxData(0)} options={socialChartOpts} height={90} />
@@ -102,7 +102,7 @@ class Accueil extends Component {
             </Col>
 
             <Col xs="6" sm="6" lg="3">
-              <div className="social-box twitter" onClick={() => window.open('https://twitter.com/footballfrance_?lang=fr', '_newtab')}>
+              <div className="social-box twitter clickable" onClick={() => window.open('https://twitter.com/footballfrance_?lang=fr', '_newtab')}>
                 <i className="fa fa-twitter"></i>
                 <div className="chart-wrapper">
                   <Line data={makeSocialBoxData(1)} options={socialChartOpts} height={90} />
@@ -122,7 +122,7 @@ class Accueil extends Component {
 
             <Col xs="6" sm="6" lg="3">
 
-              <div className="social-box linkedin" onClick={() => window.open('https://www.linkedin.com/company/16825/', '_newtab')}>
+              <div className="social-box linkedin clickable" onClick={() => window.open('https://www.linkedin.com/company/16825/', '_newtab')}>
                 <i className="fa fa-linkedin"></i>
                 <div className="chart-wrapper">
                   <Line data={makeSocialBoxData(2)} options={socialChartOpts} height={90} />
@@ -141,7 +141,7 @@ class Accueil extends Component {
             </Col>
 
             <Col xs="6" sm="6" lg="3">
-              <div className="social-box google-plus" onClick={() => window.open('https://plus.google.com/+ToulouseFC', '_newtab')}>
+              <div className="social-box google-plus clickable" onClick={() => window.open('https://plus.google.com/+ToulouseFC', '_newtab')}>
                 <i className="fa fa-google-plus"></i>
                 <div className="chart-wrapper">
                   <Line data={makeSocialBoxData(3)} options={socialChartOpts} height={90} />
