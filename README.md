@@ -1,6 +1,6 @@
 # Reactive-Football
 
-This is a small project for a school source on advanced javascript libraries.
+This is a small project for a school course on advanced javascript libraries.
 
 ## Description
 
@@ -10,7 +10,7 @@ We chose ReactJS since it has gained a lot in popularity this last months.
 
 We were only graded based on the Javascript part and we had a very limited time-frame.
 Therefore, we decided to create a very redimental backend and database.
-Also, we based our code on a [CoreUI](https://coreui.io/react/).
+Also, we based our code on a [CoreUI](https://coreui.io/react/) template.
 
 # Testing
 
@@ -39,7 +39,7 @@ Open a command line in the folder :
 ```
 
 Run the command :
-(You will need to have Node installed)
+(You will need to have [Node](https://nodejs.org/en/download/) installed)
 ```
 npm install
 ```
